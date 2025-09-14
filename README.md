@@ -34,7 +34,7 @@ GuardaChat is a lightweight PHP MVC application that allows users to import chat
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/eduardoverap/guardachat.git
+   git clone https://github.com/soyevera/guardachat.git
 
 2. **Install dependencies**
 
@@ -74,7 +74,7 @@ As this is a project made as PHP practice, plans for porting this to an offline/
 ## Author
 
 Developed by Eduardo Vera Palomino.
-LinkedIn: @eduardoverap | GitHub: @eduardoverap
+LinkedIn & GitHub: @soyevera
 
 ## License
 
