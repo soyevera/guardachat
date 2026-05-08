@@ -21,7 +21,11 @@ input,
 textarea {
   font-family: sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 400;
+}
+
+body > strong {
+  font-weight: 600;
 }
 
 /* Page layout */

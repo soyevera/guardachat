@@ -1,6 +1,15 @@
 <?php
+
 // URL function
 if (!function_exists('url')) {
+  /**
+   * Format an URL for a page with the base route.
+   * 
+   * Example: `url('abc')` returns `'https://myblog.info/abc'`.
+   * 
+   * @param string $path A web page.
+   * @return string Formatted URL.
+   */
   function url(string $path = ''): string
   {
     return rtrim(BASE_URL, '/') . '/' . ltrim($path, '/');

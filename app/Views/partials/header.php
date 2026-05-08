@@ -19,6 +19,7 @@
         <a class="list-btn" title="View your chat archive" href="<?= url() ?>">💬 My chats</a>
         <a class="list-btn" title="Manage your chat database" href="<?= url('import') ?>">🛢️ Import</a>
         <a class="list-btn" title="Search in your chats" href="<?= url('search') ?>">🔎 Search</a>
+        <a class="list-btn" title="Settings" href="<?= url('settings') ?>">⚙️ Settings</a>
         <a class="list-btn" title="About this application" href="<?= url('about') ?>">👨🏾‍💻 About</a>
       </div>
     </aside>

@@ -7,6 +7,9 @@ abstract class BaseController
   // Method for loading the view
   protected function render(string $viewName, array $data = []): void
   {
+    // Set UTF-8 header
+    header('Content-Type: text/html; charset=UTF-8');
+
     // Include header.php
     include_once '../app/Views/partials/header.php';
 
@@ -25,9 +28,9 @@ abstract class BaseController
   }
 
   // Verify if chat database exists
-  protected function databaseExists(): bool
+  protected function databaseExists($db = DB_PATH): bool
   {
-    return file_exists(DB_PATH);
+    return file_exists($db);
   }
 
   // Main method for the class

@@ -8,7 +8,7 @@ use Throwable;
 class ChatController extends BaseController
 {
   // Get chat content from the model
-  private function getChat($conversationId): ?string
+  private function getChat(string $conversationId): ?string
   {
     $model = new Chat();
     $content = $model->getChatContent($conversationId);
