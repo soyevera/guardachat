@@ -36,6 +36,8 @@ trait MessageProcessing
 
             // Message body: Markdown to HTML
             $msgPart = (string) $contentParts[0] ?? '';
+            if ($msgPart === '') return null;
+
             if ($this->roles[$currRole] === 'ChatGPT') {
               $markdown = new Markdown();
               $markdown->setContent($msgPart);
